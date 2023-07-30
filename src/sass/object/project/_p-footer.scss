@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.p-footer {
+    background-color: $bg-black;
+    padding-top: rem(50);
+    padding-bottom: rem(20);
+}
+
+.p-footer__inner {
+    padding: 0 rem(20);
+    margin: auto;
+}
+
+.p-footer__copyright {
+    text-align: center;
+    margin-top: rem(30);
+    color: #A798B7;
+    font-family: $english-font-family;
+    font-weight: $regular;
+    font-size: rem(10);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+}

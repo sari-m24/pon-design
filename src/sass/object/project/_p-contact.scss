@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-contact {
+    padding-top: rem(60);
+    background-color: #F7F7F7;
+    padding-bottom: rem(60);
+}
+
+.p-contact__text-block {
+    margin-top: rem(30);
+    text-align: center;
+}
+
+.p-contact__text {
+    color: $black;
+    font-size: rem(14);
+    font-weight: $regular;
+    letter-spacing: 0.05em;
+    line-height: 1.786;
+}
+
+.p-contact__button {
+    margin-top: rem(30);
+    text-align: center;
+}
+
+

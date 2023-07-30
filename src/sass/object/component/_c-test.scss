@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-test {
+    color: red;
+    font-size: rem(100);
+}
+
+.c-test--english {
+    font-family: $english-font-family;
+    font-weight: $bold;
+}

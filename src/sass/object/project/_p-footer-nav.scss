@@ -1,0 +1,23 @@
+@use "global" as *;
+
+
+.p-footer-nav {
+
+}
+
+.p-footer-nav__items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: rem(20);
+}
+
+.p-footer-nav__item a {
+    color: $white;
+    font-family: $english-font-family;
+    font-weight: $bold;
+    font-size: rem(12);
+    text-transform: uppercase;
+    line-height: 1.25;
+    padding: rem(10);
+}
+

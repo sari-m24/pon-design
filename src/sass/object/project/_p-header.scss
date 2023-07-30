@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-header {
+    height: rem(62);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.p-header__inner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem(20);
+}
+
+.p-header__logolink {
+    color: $white;
+    font-size: rem(18);
+    line-height: 1;
+    display: block;
+}
+
+.p-header__pc-nav {
+    height: inherit;
+}

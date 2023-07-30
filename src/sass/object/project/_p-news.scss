@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.p-news__items {
+    margin-top: rem(32);
+}
+
+.p-news__item + .p-news__item {
+    margin-top: rem(40);
+}
+
