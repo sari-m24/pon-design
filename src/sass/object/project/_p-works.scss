@@ -1,7 +1,20 @@
 @use "global" as *;
 
+.p-works__content {
+    @include mq("md") {
+        display: flex;
+        align-items: center;
+        padding-top: rem(60);
+        padding-bottom: rem(80);
+        background: linear-gradient(90deg, transparent 0%, transparent 33%, #F0F0F0 33%, #F0F0F0 100%);
+    }
+}
+
 .p-works__images {
     position: relative;
+    @include mq("md") {
+        width: 59.52381%;
+    }
 }
 
 .p-works__img {
@@ -31,6 +44,13 @@
     margin-left: calc(50% - 50vw);
     padding-bottom: rem(60);
     padding-top: rem(156);
+    @include mq("md") {
+        margin-left: initial;
+        padding: 0;
+        margin-top: 0;
+        width: 40.5%;
+        background-color: transparent;
+    }
 }
 
 .p-works__text-block {

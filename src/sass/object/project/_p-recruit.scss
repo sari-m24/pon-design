@@ -2,15 +2,33 @@
 
 .p-recruit__inner.l-inner {
     padding: 0;
+    @include mq("md") {
+        padding-right: rem(20);
+        padding-left: rem(20);
+    }
+}
+
+.p-recruit__wrapper {
+    @include mq("md") {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
 
 .p-recruit__contents {
-    padding-bottom: rem(56);
+    padding: rem(60) 0;
     background-color: #F7F7F7;
+    @include mq("md") {
+        width: 40%;
+        padding: rem(70) 0;
+    }
 }
 
 .p-recruit__image {
     position: relative;
+    @include mq("md") {
+        width: 60%;
+    }
 }
 
 .p-recruit__image::before {
@@ -27,10 +45,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.p-recruit__title {
-    margin-top: rem(60);
 }
 
 .p-recruit__text-block {

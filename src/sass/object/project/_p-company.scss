@@ -4,9 +4,20 @@
     padding-top: rem(60);
     padding-bottom: rem(80);
     background-image: url(../images/common/company-bg.png);
-    background-position: center;
+    background-position: rem(-15) 0;
     background-repeat: no-repeat;
     background-size: cover;
+    @include mq("md") {
+        padding-top: rem(128);
+        background-image: url(../images/common/company-bg-pc.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+}
+
+.p-company__inner.l-inner {
+    max-width: rem(1300);
 }
 
 .p-company__contents {
@@ -20,6 +31,9 @@
     letter-spacing: 0.05em;
     line-height: 1.5;
     color: $black;
+    @include mq("md") {
+        font-size: rem(40);
+    }
 }
 
 .p-company__yellow {

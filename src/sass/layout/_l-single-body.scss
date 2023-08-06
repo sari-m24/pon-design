@@ -1,8 +1,9 @@
 @use "global" as *;
 
-.l-topcontact {
+.l-single-body {
     margin-top: rem(40);
+    color: $black;
     @include mq("md") {
-        margin-top: rem(110);
+        margin-top: rem(70);
     }
 }

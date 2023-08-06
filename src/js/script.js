@@ -6,7 +6,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-hamburger").toggleClass("is-active");
     $(".js-sp-nav").fadeToggle();
   });
-});
+
+  // ヘッダーの背景色変更
+  $(function () {
+    $(window).on('scroll', function () {
+        if ($('.p-mv').height() < $(this).scrollTop()) {
+            $('.js-header').addClass('change-color');
+      } else {
+            $('.js-header').removeClass('change-color');
+      }
+    });
+  });
 
   var swiper = new Swiper(".js-works-swiper", {
     loop: true,
@@ -17,4 +27,5 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     autoplay: {
       delay: 3000,
     },
-  });
+  })
+});

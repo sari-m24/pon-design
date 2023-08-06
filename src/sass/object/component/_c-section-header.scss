@@ -27,3 +27,12 @@
     }
 }
 
+.c-section-header--left {
+    @include mq("md") {
+        text-align: left;
+    }
+}
+
+.c-section-header--white {
+    color: $white;
+}

@@ -2,9 +2,15 @@
 
 .p-news-content {
     color: $black;
+    @include mq("md") {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 .p-news-content__meta {
+    display: flex;
+    align-items: center;
     font-size: rem(15);
     font-weight: $regular;
     letter-spacing: 0.1em;
@@ -19,12 +25,22 @@
     background-color: #E8E8E8;
     border-radius: 50px;
     display: inline-block;
-    padding: rem(4) rem(18);
+    padding: rem(5) rem(4) rem(3);
+    width: rem(82);
     line-height: 1;
     font-family: $english-font-family;
+    text-align: center;
+    @include mq("md") {
+        flex-shrink: 0;
+        font-size: rem(12);
+        padding: rem(5);
+    }
 }
 
 .p-news-content__link {
+    @include mq("md") {
+        margin-left: rem(20);
+    }
 }
 
 .p-news-content__text {

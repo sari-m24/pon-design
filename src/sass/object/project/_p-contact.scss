@@ -4,6 +4,10 @@
     padding-top: rem(60);
     background-color: #F7F7F7;
     padding-bottom: rem(60);
+    @include mq("md") {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
 }
 
 .p-contact__text-block {

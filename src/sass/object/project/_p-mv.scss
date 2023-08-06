@@ -19,6 +19,12 @@
     transform: translateY(-50%);
     left: rem(30);
     color: $white;
+    @include mq("md") {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
 }
 
 .p-mv__title {
@@ -28,6 +34,14 @@
     font-family: $english-font-family;
     line-height: 1.1;
     text-transform: uppercase;
+    @include mq("md") {
+        font-size: rem(70);
+        line-height: 1.25;
+    }
+}
+
+.p-mv__title span {
+    display: inline-block;
 }
 
 .p-mv__subtitle {
@@ -36,10 +50,17 @@
     letter-spacing: 0.1em;
     line-height: 1.812;
     margin-top: rem(20);
+    @include mq("md") {
+        font-size: rem(24);
+        letter-spacing: 1.583;
+    }
 }
 
 .p-mv__button {
     margin-top: rem(30);
+    @include mq("md") {
+        margin-top: rem(50);
+    }
 }
 
 .p-mv__scroll {
